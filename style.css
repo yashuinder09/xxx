@@ -1,0 +1,173 @@
+*{
+}
+body{
+    background-color:rgb(219, 9, 37);
+    display: grid;
+    text-align: center;
+
+
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: xx-large;
+}
+h2{
+    color: white;
+    font-size: xx-large;
+    text-align: center;
+
+
+}
+h3{
+    text-align: center;
+    color: white;
+    font-size: xx-large;
+
+}
+nav{
+    border: 2px dashed ;
+    
+    
+    display:grid;
+    color: white;
+    justify-content: center;
+    
+    
+    text-align: center;
+}
+nav img{
+
+    align-content: center;
+    margin-left:40px;
+
+    height: 150px;
+    object-fit:cover;
+    display: flex;
+    align-items: center;
+
+}
+nav p{
+    font-size: 30px;
+}
+
+
+.place-btn{
+
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap
+    
+}
+.place-btn button{
+    margin:10px;
+    padding: 30px;
+
+    height: 100px;
+    width: 200px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+
+    text-align: center;
+
+    font-size:20px;
+    background-color:aqua;
+
+
+}
+
+.place-btn a{
+    text-decoration: none;
+    font-size:20px;
+
+}
+#h1-under{
+    text-decoration: underline;
+
+}
+
+.products{
+    border: 2px dashed;
+    display: grid;
+    grid-template-columns:repeat(4,1fr);
+    width:100%;
+    align-content: center;
+    justify-items: center;
+
+
+
+
+}
+#product-card{
+    border: 5px outset white;
+    height: 400px;
+    width:250px;
+    display: flex;
+
+    align-items: end;
+    border-radius:10px;
+    margin: 10px;
+
+
+
+
+
+}
+.product-info{
+    background-color: rgba(128, 128, 128, 0.493);
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+    margin: 5px;
+    border-radius: 10px;
+
+}
+.product-info button{
+    padding: 30px;
+    width: 200px;
+    background-color:green;
+
+    color: white;
+    font-size:20px;
+    border-radius: 15px;
+    margin: 10px;
+    border: 2px white outset;
+}
+
+footer{
+    color: white;
+    font-size: x-large;
+}
+#pur-p{
+    color: rgb(255, 42, 131);
+}
+
+footer button{
+    padding: 20px;
+    width: 200px;
+    background-color: darkcyan;
+    font-size: 20px;
+}
+
+/* Media */
+@media(max-width:768px){
+    body{
+        overflow-x: hidden;
+    }
+    .products{
+        grid-template-columns:repeat(2, 1fr);
+        align-content: center;
+    }
+}
+@media(max-width:340px){
+    .products{
+        grid-template-columns:1fr;
+    }
+}
